@@ -1,1 +1,1 @@
-# serenamidori Art Portfolio
+# serenamidori Art Portfolio and Commission Site
