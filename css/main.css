@@ -3,3 +3,25 @@ body {
   overflow-x: hidden;
   font-family: Nunito, sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6, p, span, a {
+  color: #fff;
+  text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.diagonal-stripes {
+  background-color: #fff; /* Fallback color */
+  background-image: repeating-linear-gradient(
+    45deg,
+    #80CB43 0px,
+    #80CB43 200px,
+    #5FAA22 200px,
+    #5FAA22 400px
+  );
+  background-size: 100%; /* Controls the size of the repeating pattern */
+}
+
+img.logo {
+  width: 75%;
+  max-width: 450px;
+}
