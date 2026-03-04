@@ -10,11 +10,12 @@ body {
 
   .content {
     flex-grow: 1;
+    margin: 4%;
   }
 }
 
 .diagonal-stripes {
-  background-color: #fff; /* Fallback color */
+  background-color: #80CB43;
   background-image: repeating-linear-gradient(
     45deg,
     #80CB43 0px,
@@ -22,13 +23,15 @@ body {
     #5FAA22 200px,
     #5FAA22 400px
   );
-  background-size: 100%; /* Controls the size of the repeating pattern */
+  background-size: 100%;
 }
 
 img.logo {
   width: 75%;
   max-width: 450px;
 }
+
+
 
 /* Bulma Overrides */
 :root {
