@@ -14,6 +14,17 @@ body {
   }
 }
 
+.content {
+  .is-white {
+    color: #fff;
+    text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .is-spaced {
+    letter-spacing: 1px;
+  }
+}
+
 .diagonal-stripes {
   background-color: #80CB43;
   background-image: repeating-linear-gradient(
@@ -26,11 +37,61 @@ body {
   background-size: 100%;
 }
 
-img.logo {
-  width: 75%;
+.logo {
   max-width: 450px;
 }
 
+.carousel-wrapper {
+  position: relative;
+  margin-bottom: 4rem;
+
+  .carousel-list {
+    display: flex;
+    gap: 2.5em;
+    padding: 16px;
+    max-width: 90vw;
+
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    .item {
+      flex-shrink: 0;
+      margin-top: .25em;
+      scroll-snap-align: center;
+
+      .card {
+        height: 56vh;
+      }
+    }
+  }
+
+  .carousel-list::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.shadow-svg-left {
+  filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, .25));
+  path {
+      transition: fill 0.3s ease;
+  }
+}
+
+.shadow-svg-right {
+  filter: drop-shadow(0px -4px 2px rgba(0, 0, 0, .25));
+  path {
+      transition: fill 0.3s ease;
+  }
+}
+
+.shadow-svg-right:hover path, .shadow-svg-left:hover path {
+  fill: #FAC827;
+  transition: fill 0.3s ease;
+}
 
 
 /* Bulma Overrides */
@@ -48,7 +109,7 @@ img.logo {
     color: #fff;
     font-weight: 500;
     font-size: 1.25em;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 
     padding: 1rem 1.25rem;
     line-height: 1;
@@ -58,4 +119,40 @@ img.logo {
   a.navbar-item:hover {
     background-color: #000;
   }
+}
+
+.card {
+  background-color: #F9F4F5;
+  border: 5px solid #BFBFBF;
+  border-radius: 45px;
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    max-width: 400px;
+    max-height: 500px;
+  }
+}
+
+.button.chevron {
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 7em;
+  padding: 1.5rem;
+}
+
+.button.chevron:hover {
+  background-color: transparent;
+}
+
+.button.is-large {
+  padding: 18px 62px;
+}
+
+.button.is-black:hover {
+  background-color: #2b3226;
 }

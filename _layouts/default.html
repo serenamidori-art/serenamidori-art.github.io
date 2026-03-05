@@ -8,12 +8,17 @@
     <link rel="icon" type="image/png" href="/css/assets/favicon-32x32.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <script src="../js/main.js"></script>
   </head>
   <body class="diagonal-stripes">
 
-    <img class="logo my-4" src="../css/assets/logo.png" alt="serenamidori logo">
-
+    <div class="is-flex is-flex-direction-column is-align-items-center logo">
+      <a href="/">
+        <img class="my-4" src="../css/assets/logo.png" alt="serenamidori logo">
+      </a>
+    </div>
+    
     <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
       <a href="/" class="navbar-item">Commissions</a>
       <a href="/portfolio" class="navbar-item">Portfolio</a>
@@ -25,9 +30,10 @@
       {{ content }}
     </div>
 
-
-    <a href="https://bulma.io">
-      <img src="https://bulma.io/assets/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
-    </a>
+    <div class="mt-5">
+      <a href="https://bulma.io">
+        <img src="https://bulma.io/assets/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+      </a>
+    </div>
   </body>
 </html>
