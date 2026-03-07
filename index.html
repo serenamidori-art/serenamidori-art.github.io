@@ -4,28 +4,14 @@ title: Commissions
 ---
 
 <div class="carousel-wrapper">
-  <ul class="carousel-list">
-    <li class="item">
-      <div class="card">
-        <div class="card-content p-6">
-          <h1 class="card-header-title is-centered">Full Body - $65</h1>
-          <img src="https://serenamidori.carrd.co/assets/images/gallery02/0c321596_original.png?v=95e59d7a">
-        </div>
-      </div>
-    </li>
-    <li class="item">
-      <div class="card">
-        <div class="card-content p-6">
-          <h1 class="card-header-title is-centered">Character Reference - $50</h1>
-          <img src="https://serenamidori.carrd.co/assets/images/gallery03/92c76813_original.png?v=95e59d7a">
-        </div>
-      </div>
-    </li>
-    <li class="item">
+  <div id="loader" class="is-flex is-justify-content-center"><span class="loader"></span></div>
+  <ul id="commissions-list" class="carousel-list"></ul>
+
+    <!-- <li class="item">
       <div class="card">
         <div class="card-content p-6">
           <h1 class="card-header-title is-centered">D&D Party Token - $80</h1>
-          <img src="https://serenamidori.carrd.co/assets/images/gallery05/630e391e_original.png?v=95e59d7a">
+          <img class="example" src="https://serenamidori.carrd.co/assets/images/gallery05/630e391e_original.png?v=95e59d7a">
         </div>
       </div>
     </li>
@@ -33,7 +19,7 @@ title: Commissions
       <div class="card">
         <div class="card-content p-6">
           <h1 class="card-header-title is-centered">Half Body Sketch - $20</h1>
-          <img src="https://serenamidori.carrd.co/assets/images/gallery01/11ef28ab_original.png?v=95e59d7a">
+          <img class="example" src="https://serenamidori.carrd.co/assets/images/gallery01/11ef28ab_original.png?v=95e59d7a">
         </div>
       </div>
     </li>
@@ -41,7 +27,7 @@ title: Commissions
       <div class="card">
         <div class="card-content p-6">
           <h1 class="card-header-title is-centered">TBD</h1>
-          <img src="https://serenamidori.carrd.co/assets/images/gallery02/0c321596_original.png?v=95e59d7a">
+          <img class="example" src="https://serenamidori.carrd.co/assets/images/gallery02/0c321596_original.png?v=95e59d7a">
         </div>
       </div>
     </li>
@@ -49,11 +35,11 @@ title: Commissions
       <div class="card">
         <div class="card-content p-6">
           <h1 class="card-header-title is-centered">TBD</h1>
-          <img src="https://serenamidori.carrd.co/assets/images/gallery02/0c321596_original.png?v=95e59d7a">
+          <img class="example" src="https://serenamidori.carrd.co/assets/images/gallery02/0c321596_original.png?v=95e59d7a">
         </div>
       </div>
-    </li>
-  </ul>
+    </li> -->
+
 
   <div class="is-flex is-flex-direction-row is-justify-content-center">
     <button onclick="handleClick('previous')" class="button is-text is-white chevron button--previous me-5" type="button">
@@ -70,3 +56,7 @@ title: Commissions
   <h3 class="is-white is-spaced">Already know what you want?</h3>
   <button class="button is-black is-large is-spaced mt-4">Start Commission</button>
 </div>
+
+<script>
+  renderCommissions();
+</script>

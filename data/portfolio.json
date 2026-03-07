@@ -1,0 +1,52 @@
+{
+  "sections": [
+    {
+      "id": "fullbody",
+      "label": "Full Body",
+      "price": "$65",
+      "exampleIndex": 6,
+      "images": [
+        { "file": "assets/full_body/1.png", "alt": "...", "title": "Two Hats McGee (owned by serenamidori)", "position": "top" },
+        { "file": "assets/full_body/2.png", "alt": "...", "title": "Alenya Van Druskia (owned by Castorrel)", "position": "center" },
+        { "file": "assets/full_body/3.png", "alt": "...", "title": "Lymardra Syvarka (owned by Castorrel)", "position": "center" },
+        { "file": "assets/full_body/4.png", "alt": "...", "title": "Dulcia (owned by serenamidori)", "position": "center" },
+        { "file": "assets/full_body/5.png", "alt": "...", "title": "Virani Huber (owned by Cyberlink420)", "position": "top" },
+        { "file": "assets/full_body/6.png", "alt": "...", "title": "Miriel (owned by serenamidori)", "position": "center" },
+        { "file": "assets/full_body/7.png", "alt": "...", "title": "Devon (owned by Scribs)", "position": "center" },
+        { "file": "assets/full_body/8.png", "alt": "...", "title": "Orwell Magrine (owned by GaspLantern)", "position": "center" },
+        { "file": "assets/full_body/9.png", "alt": "...", "title": "Dulcia (owned by serenamidori)", "position": "center" },
+        { "file": "assets/full_body/10.png", "alt": "...", "title": "Prin & Mueldon (owned by serenamidori)", "position": "center" },
+        { "file": "assets/full_body/11.png", "alt": "...", "title": "Prin & Mueldon (owned by serenamidori)", "position": "center" },
+        { "file": "assets/full_body/12.png", "alt": "...", "title": "Prin & Sam (owned by serenamidori)", "position": "top" },
+        { "file": "assets/full_body/13.png", "alt": "...", "title": "Dulcia (owned by serenamidori)", "position": "center" },
+        { "file": "assets/full_body/14.png", "alt": "...", "title": "Jess & Zoe (owned by HailStone2318/quagsthecryptid)", "position": "top" },
+        { "file": "assets/full_body/15.png", "alt": "...", "title": "Robin & Lilylynn (owned by ddemise)", "position": "center" },
+        { "file": "assets/full_body/16.png", "alt": "...", "title": "Hollow (owned by thezachrifice)", "position": "center" }
+      ]
+    },
+    {
+      "id": "reference",
+      "label": "Character Reference",
+      "price": "$50",
+      "exampleIndex": 0,
+      "images": [
+        { "file": "assets/reference/1.png", "alt": "...", "title": "...", "position": "top" },
+        { "file": "assets/reference/2.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/reference/3.png", "alt": "...", "title": "...", "position": "top" },
+        { "file": "assets/reference/4.png", "alt": "...", "title": "...", "position": "top" },
+        { "file": "assets/reference/5.png", "alt": "...", "title": "...", "position": "top" },
+        { "file": "assets/reference/6.png", "alt": "...", "title": "...", "position": "top" },
+        { "file": "assets/reference/7.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/reference/8.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/reference/9.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/reference/10.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/reference/11.png", "alt": "...", "title": "...", "position": "top" },
+        { "file": "assets/reference/12.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/reference/13.png", "alt": "...", "title": "...", "position": "top" }
+      ]
+    }
+    
+    
+    
+  ]
+}
