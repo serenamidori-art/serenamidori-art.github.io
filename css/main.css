@@ -64,7 +64,8 @@ body {
       scroll-snap-align: center;
 
       .card {
-        height: 56vh;
+        height: -webkit-fill-available;
+        width: 25vw;
       }
     }
   }
@@ -100,14 +101,6 @@ body {
 
 .section-container {
   margin-bottom: 3.5rem;
-}
-
-.gap-4 {
-  gap: 1rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
 }
 
 .thumbnail-container {
@@ -190,7 +183,7 @@ body {
 
   img.example {
     max-width: 400px;
-    max-height: 500px;
+    max-height: 450px;
   }
 }
 
@@ -211,4 +204,16 @@ body {
 
 .button.is-black:hover {
   background-color: #2b3226;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.is-border-top-none {
+  border-top: none;
 }

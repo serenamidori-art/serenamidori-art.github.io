@@ -4,9 +4,10 @@
       "id": "fullbody",
       "label": "Full Body",
       "price": "$65",
+      "description": "(+$45 for each additional character) A fully shaded piece of your character(s) with a transparent background. weapons or other complex props can be included for a variable additional charge.",
       "exampleIndex": 6,
       "images": [
-        { "file": "assets/full_body/1.png", "alt": "...", "title": "Two Hats McGee (owned by serenamidori)", "position": "top" },
+        { "file": "assets/full_body/1.png", "alt": "...", "position": "top" },
         { "file": "assets/full_body/2.png", "alt": "...", "title": "Alenya Van Druskia (owned by Castorrel)", "position": "center" },
         { "file": "assets/full_body/3.png", "alt": "...", "title": "Lymardra Syvarka (owned by Castorrel)", "position": "center" },
         { "file": "assets/full_body/4.png", "alt": "...", "title": "Dulcia (owned by serenamidori)", "position": "center" },
@@ -28,6 +29,7 @@
       "id": "reference",
       "label": "Character Reference",
       "price": "$50",
+      "description": "For characters who need new detailed reference images. Can be done from description or random images. Options for alternate forms, extra outfits, or other props are available for a variable extra charge. For free, you can add a color palette, a SFW base version, or a height chart.",
       "exampleIndex": 0,
       "images": [
         { "file": "assets/reference/1.png", "alt": "...", "title": "...", "position": "top" },
@@ -44,9 +46,83 @@
         { "file": "assets/reference/12.png", "alt": "...", "title": "...", "position": "center" },
         { "file": "assets/reference/13.png", "alt": "...", "title": "...", "position": "top" }
       ]
+    },
+    {
+      "id": "partytoken",
+      "label": "D&D Party Token",
+      "price": "$80",
+      "description": "A token of your whole party for your online TTRPG games. Best used for tracking your party's progress on overworld maps, or just shoving your characters into a tiny circle. An additional charge may be added for larger parties or added complexity.",
+      "exampleIndex": 1,
+      "images": [
+        { "file": "assets/party_token/1.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/party_token/2.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/party_token/3.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/party_token/4.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/party_token/5.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/party_token/6.png", "alt": "...", "title": "...", "position": "center" }
+      ]
+    },
+    {
+      "id": "sketch",
+      "label": "Sketch",
+      "price": "$20",
+      "description": "A quicker and cheaper option if you're looking for character art. Clean and detailed sketches with minimal detail.",
+      "exampleIndex": 0,
+      "images": [
+        { "file": "assets/sketch/1.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/sketch/2.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/sketch/3.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/sketch/4.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/sketch/5.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/sketch/6.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/sketch/7.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/sketch/8.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/sketch/9.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/sketch/10.png", "alt": "...", "title": "...", "position": "center" }
+      ]
+    },
+    {
+      "id": "mlp",
+      "label": "MLP Style",
+      "price": "$30",
+      "description": "Enter explanation here",
+      "exampleIndex": 1,
+      "images": [
+        { "file": "assets/mlp/1.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/mlp/2.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/mlp/3.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/mlp/4.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/mlp/5.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/mlp/6.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/mlp/7.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/mlp/8.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/mlp/9.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/mlp/10.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/mlp/11.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/mlp/12.png", "alt": "...", "title": "...", "position": "center" }
+      ]
+    },
+    {
+      "id": "misc",
+      "label": "And More",
+      "price": "(Prices vary)",
+      "description": "Enter explanation here",
+      "exampleIndex": 2,
+      "images": [
+        { "file": "assets/misc/1.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/misc/2.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/misc/3.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/misc/4.png", "alt": "...", "title": "...", "position": "top" },
+        { "file": "assets/misc/5.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/misc/6.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/misc/7.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/misc/8.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/misc/9.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/misc/10.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/misc/11.png", "alt": "...", "title": "...", "position": "center" },
+        { "file": "assets/misc/12.png", "alt": "...", "title": "...", "position": "top" },
+        { "file": "assets/misc/13.png", "alt": "...", "title": "...", "position": "center" }
+      ]
     }
-    
-    
-    
   ]
 }

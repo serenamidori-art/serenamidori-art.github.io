@@ -31,19 +31,41 @@ async function renderCommissions() {
         card.className = 'card';
 
         const cardContent = document.createElement('div');
-        cardContent.className = 'card-content p-6';
+        cardContent.className = 'card-content';
 
         const h1 = document.createElement('h1');
-        h1.className = 'card-header-title is-centered';
+        h1.className = 'card-header-title is-centered mb-0 mt-2';
         h1.textContent = `${section.label} - ${section.price}`;
 
+        const desc = document.createElement('p');
+        desc.className = 'mb-0';
+        desc.textContent = section.description;
+
+        const cardHeader = document.createElement('header');
+        cardHeader.className = 'card-header';
+
+        // const cardFooter = document.createElement('div');
+        // cardFooter.className = 'card-footer is-justify-content-center is-border-top-none';
+
+        const button = document.createElement('button');
+        button.href = `/portfolio#${section.id}`;
+        button.target = '_blank';
+        button.rel = 'noopener noreferrer'
+        button.className = 'button is-small is-black my-2'
+        button.textContent = 'See more examples';
+
         const img = document.createElement('img');
-        img.className = 'example';
+        // img.className = 'example';
         img.src = section.images[section.exampleIndex].file;
 
-        cardContent.appendChild(h1);
+        cardHeader.appendChild(h1);
+        card.appendChild(cardHeader);
         cardContent.appendChild(img);
+        // cardContent.appendChild(desc);
+        // cardContent.appendChild(button);
+
         card.appendChild(cardContent);
+
         li.appendChild(card);
         commissionsList.appendChild(li);
       });
@@ -106,3 +128,14 @@ async function renderPortfolio() {
 
   loader.remove();
 }
+
+window.addEventListener('load', function() {
+  if (window.location.hash) {
+    const targetElement = document.querySelector(window.location.hash);
+    if (targetElement) {
+      setTimeout(() => {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }, 100); 
+    }
+  }
+});
