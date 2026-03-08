@@ -5,7 +5,7 @@
       "label": "Full Body",
       "price": "$65",
       "description": "(+$45 for each additional character) A fully shaded piece of your character(s) with a transparent background. weapons or other complex props can be included for a variable additional charge.",
-      "exampleIndex": 6,
+      "exampleIndex": 2,
       "images": [
         { "file": "assets/full_body/1.png", "alt": "...", "position": "top" },
         { "file": "assets/full_body/2.png", "alt": "...", "title": "Alenya Van Druskia (owned by Castorrel)", "position": "center" },

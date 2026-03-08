@@ -4,79 +4,30 @@ title: Commissions
 ---
 
 <div class="carousel-wrapper">
-  <!-- <div id="loader" class="is-flex is-justify-content-center"><span class="loader"></span></div> -->
-  <!-- <ul id="commissions-list" class="carousel-list"></ul> -->
 
-  <ul id="commissions-list" class="carousel-list">
+  <div id="loader" class="d-flex justify-content-center">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  <ul id="commissions-list" class="carousel-list"></ul>
 
-    <li class="item">
-      <div class="card">
-        <header class="card-header">
-          <h1 class="card-header-title is-centered mb-0 mt-2">Full Body - $65</h1>
-        </header>
-        <div class="card-content"><img src="assets/full_body/7.png"></div>
-      </div>
-    </li>
-    <li class="item">
-      <div class="card">
-        <header class="card-header">
-          <h1 class="card-header-title is-centered mb-0 mt-2">Character Reference - $50</h1>
-        </header>
-        <div class="card-content"><img src="assets/reference/1.png"></div>
-      </div>
-    </li>
-    <li class="item">
-      <div class="card">
-        <header class="card-header">
-          <h1 class="card-header-title is-centered mb-0 mt-2">D&amp;D Party Token - $80</h1>
-        </header>
-        <div class="card-content"><img src="assets/party_token/2.png"></div>
-      </div>
-    </li>
-    <li class="item">
-      <div class="card">
-        <header class="card-header">
-          <h1 class="card-header-title is-centered mb-0 mt-2">Sketch - $20</h1>
-        </header>
-        <div class="card-content"><img src="assets/sketch/1.png"></div>
-      </div>
-    </li>
-    <li class="item">
-      <div class="card">
-        <header class="card-header">
-          <h1 class="card-header-title is-centered mb-0 mt-2">MLP Style - $30</h1>
-        </header>
-        <div class="card-content"><img src="assets/mlp/2.png"></div>
-      </div>
-    </li>
-    <li class="item">
-      <div class="card">
-        <header class="card-header">
-          <h1 class="card-header-title is-centered mb-0 mt-2">And More - (Prices vary)</h1>
-        </header>
-        <div class="card-content"><img src="assets/misc/3.png"></div>
-      </div>
-    </li>
-  </ul>
-
-
-
-  <div class="is-flex is-flex-direction-row is-justify-content-center">
-    <button onclick="handleClick('previous')" class="button is-text is-white chevron button--previous me-5" type="button">
+  <div class="d-flex flex-row justify-content-center">
+    <button onclick="handleClick('previous')" class="btn btn-link text-white chevron button--previous me-5" type="button">
       <svg class="shadow-svg-left" width="80" height="80" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)"><path d="M15.2335 5.21967C15.5263 5.51256 15.5263 5.98744 15.2335 6.28033L9.51379 12L15.2335 17.7197C15.5263 18.0126 15.5263 18.4874 15.2335 18.7803C14.9406 19.0732 14.4657 19.0732 14.1728 18.7803L7.92279 12.5303C7.6299 12.2374 7.6299 11.7626 7.92279 11.4697L14.1728 5.21967C14.4657 4.92678 14.9406 4.92678 15.2335 5.21967Z" fill="#fff"/></svg>
 
     </button>
-    <button onclick="handleClick('next')" class="button is-text is-white chevron button--next ms-5" type="button">
+    <button onclick="handleClick('next')" class="btn btn-link text-white chevron button--next ms-5" type="button">
       <svg class="shadow-svg-right" width="80" height="80" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(180 0 0)"><path d="M15.2335 5.21967C15.5263 5.51256 15.5263 5.98744 15.2335 6.28033L9.51379 12L15.2335 17.7197C15.5263 18.0126 15.5263 18.4874 15.2335 18.7803C14.9406 19.0732 14.4657 19.0732 14.1728 18.7803L7.92279 12.5303C7.6299 12.2374 7.6299 11.7626 7.92279 11.4697L14.1728 5.21967C14.4657 4.92678 14.9406 4.92678 15.2335 5.21967Z" fill="#fff"/></svg>
     </button>
   </div>
 </div>
 
-<div class="is-flex is-flex-direction-column is-align-items-center my-3">
-  <h3 class="is-white is-spaced">Already know what you want?</h3>
-  <button class="button is-black is-large is-spaced mt-4">Start Commission</button>
+<div class="d-flex flex-column align-items-center my-3">
+  <h3 class="text-white text-spaced">Already know what you want?</h3>
+  <button class="btn btn-dark btn-lg text-spaced mt-4">Start Commission</button>
 </div>
 
 <script>
-  // renderCommissions();
+  renderCommissions();
 </script>

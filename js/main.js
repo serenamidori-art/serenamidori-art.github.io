@@ -23,49 +23,50 @@ async function renderCommissions() {
       }
       const data = await response.json();
 
-      data.sections.forEach(section => {        
+      data.sections.forEach(section => {
+        
         const li = document.createElement('li');
         li.className = 'item';
 
         const card = document.createElement('div');
         card.className = 'card';
 
-        const cardContent = document.createElement('div');
-        cardContent.className = 'card-content';
-
-        const h1 = document.createElement('h1');
-        h1.className = 'card-header-title is-centered mb-0 mt-2';
-        h1.textContent = `${section.label} - ${section.price}`;
-
-        const desc = document.createElement('p');
-        desc.className = 'mb-0';
-        desc.textContent = section.description;
-
-        const cardHeader = document.createElement('header');
+        const cardHeader = document.createElement('div');
         cardHeader.className = 'card-header';
 
-        // const cardFooter = document.createElement('div');
-        // cardFooter.className = 'card-footer is-justify-content-center is-border-top-none';
-
-        const button = document.createElement('button');
-        button.href = `/portfolio#${section.id}`;
-        button.target = '_blank';
-        button.rel = 'noopener noreferrer'
-        button.className = 'button is-small is-black my-2'
-        button.textContent = 'See more examples';
+        const h2 = document.createElement('h2');
+        h2.className = 'center-text mb-0 mt-2';
+        h2.textContent = `${section.label} - ${section.price}`;
 
         const img = document.createElement('img');
-        // img.className = 'example';
         img.src = section.images[section.exampleIndex].file;
+        img.className = 'card-img-top';
+        img.alt = '...';
 
-        cardHeader.appendChild(h1);
+        const cardBody = document.createElement('div');
+        cardBody.className = 'card-body d-flex flex-column align-items-center justify-content-between';
+
+        const b = document.createElement('b');
+        b.textContent = '(+$45 for each additional character)';
+
+        const p = document.createElement('p');
+        p.className = 'card-text';
+        p.textContent = section.description;
+        
+        const a = document.createElement('a');
+        // a.href = `/portfolio#${section.id}`;
+        // a.target = '_blank';
+        // a.rel = 'noopener noreferrer'
+        a.className = 'btn btn-dark';
+        a.textContent = 'Learn More';
+
+        cardHeader.appendChild(h2);
+        // cardBody.appendChild(b);
+        // cardBody.appendChild(p);
+        cardBody.appendChild(img);
+        cardBody.appendChild(a);
         card.appendChild(cardHeader);
-        cardContent.appendChild(img);
-        // cardContent.appendChild(desc);
-        // cardContent.appendChild(button);
-
-        card.appendChild(cardContent);
-
+        card.appendChild(cardBody);
         li.appendChild(card);
         commissionsList.appendChild(li);
       });
@@ -100,7 +101,7 @@ async function renderPortfolio() {
         header.textContent = `${section.label}`;
 
         const imageSection = document.createElement('div');
-        imageSection.className = 'is-flex is-flex-direction-row is-flex-wrap-wrap is-justify-content-space-around gap-4';
+        imageSection.className = 'd-flex flex-row flex-wrap justify-content-around gap-4';
 
         galleryContainer.appendChild(sectionContainer);
         sectionContainer.appendChild(header);
