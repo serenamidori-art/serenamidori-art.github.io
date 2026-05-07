@@ -305,6 +305,174 @@
           "position": "center"
         }
       ]
+    },
+    {
+      "id": "mlp",
+      "label": "MLP Style",
+      "price": "$30",
+      "description": "Enter explanation here",
+      "exampleIndex": 1,
+      "images": [
+        {
+          "file": "assets/mlp/1.png",
+          "alt": "digital illustration in MLP G4 style of ",
+          "title": "",
+          "position": "center"
+        },
+        {
+          "file": "assets/mlp/2.png",
+          "alt": "digital illustration in MLP G4 style of ",
+          "title": "",
+          "position": "center"
+        },
+        {
+          "file": "assets/mlp/3.png",
+          "alt": "digital illustration in MLP G4 style of ",
+          "title": "",
+          "position": "center"
+        },
+        {
+          "file": "assets/mlp/4.png",
+          "alt": "digital illustration in MLP G4 style of ",
+          "title": "",
+          "position": "center"
+        },
+        {
+          "file": "assets/mlp/5.png",
+          "alt": "digital illustration in MLP G4 style of ",
+          "title": "",
+          "position": "center"
+        },
+        {
+          "file": "assets/mlp/6.png",
+          "alt": "digital illustration in MLP G4 style of ",
+          "title": "",
+          "position": "center"
+        },
+        {
+          "file": "assets/mlp/7.png",
+          "alt": "digital illustration in MLP G4 style of ",
+          "title": "",
+          "position": "center"
+        },
+        {
+          "file": "assets/mlp/8.png",
+          "alt": "digital illustration in MLP G4 style of ",
+          "title": "",
+          "position": "center"
+        },
+        {
+          "file": "assets/mlp/9.png",
+          "alt": "digital illustration in MLP G4 style of ",
+          "title": "",
+          "position": "center"
+        },
+        {
+          "file": "assets/mlp/10.png",
+          "alt": "digital illustration in MLP G4 style of ",
+          "title": "",
+          "position": "center"
+        },
+        {
+          "file": "assets/mlp/11.png",
+          "alt": "digital illustration in MLP G4 style of ",
+          "title": "",
+          "position": "center"
+        },
+        {
+          "file": "assets/mlp/12.png",
+          "alt": "digital illustration in MLP G4 style of ",
+          "title": "",
+          "position": "center"
+        }
+      ]
+    },
+    {
+      "id": "misc",
+      "label": "And More",
+      "price": "(Prices vary)",
+      "description": "Enter explanation here",
+      "exampleIndex": 2,
+      "images": [
+        {
+          "file": "assets/misc/1.png",
+          "alt": "digital illustration of ",
+          "title": "",
+          "position": "center"
+        },
+        {
+          "file": "assets/misc/2.png",
+          "alt": "digital illustration of ",
+          "title": "",
+          "position": "center"
+        },
+        {
+          "file": "assets/misc/3.png",
+          "alt": "digital illustration of ",
+          "title": "",
+          "position": "center"
+        },
+        {
+          "file": "assets/misc/4.png",
+          "alt": "digital illustration of ",
+          "title": "",
+          "position": "top"
+        },
+        {
+          "file": "assets/misc/5.png",
+          "alt": "digital illustration of ",
+          "title": "",
+          "position": "center"
+        },
+        {
+          "file": "assets/misc/6.png",
+          "alt": "digital illustration of ",
+          "title": "",
+          "position": "center"
+        },
+        {
+          "file": "assets/misc/7.png",
+          "alt": "digital illustration of ",
+          "title": "",
+          "position": "center"
+        },
+        {
+          "file": "assets/misc/8.png",
+          "alt": "digital illustration of ",
+          "title": "",
+          "position": "center"
+        },
+        {
+          "file": "assets/misc/9.png",
+          "alt": "digital illustration of ",
+          "title": "",
+          "position": "center"
+        },
+        {
+          "file": "assets/misc/10.png",
+          "alt": "digital illustration of ",
+          "title": "",
+          "position": "center"
+        },
+        {
+          "file": "assets/misc/11.png",
+          "alt": "digital illustration of ",
+          "title": "",
+          "position": "center"
+        },
+        {
+          "file": "assets/misc/12.png",
+          "alt": "digital illustration of ",
+          "title": "",
+          "position": "top"
+        },
+        {
+          "file": "assets/misc/13.png",
+          "alt": "digital illustration of ",
+          "title": "",
+          "position": "center"
+        }
+      ]
     }
   ]
 }

@@ -42,13 +42,11 @@ body {
 
 .diagonal-stripes {
   background-color: #80CB43;
-  background-image: repeating-linear-gradient(
-    45deg,
-    #80CB43 0px,
-    #80CB43 200px,
-    #5FAA22 200px,
-    #5FAA22 400px
-  );
+  background-image: repeating-linear-gradient(45deg,
+      #80CB43 0px,
+      #80CB43 200px,
+      #5FAA22 200px,
+      #5FAA22 400px);
   background-size: 100%;
 }
 
@@ -100,15 +98,17 @@ body {
 
 .shadow-svg-left {
   filter: drop-shadow(2px 4px 0 rgba(0, 0, 0, .25));
+
   path {
-      transition: fill 0.3s ease;
+    transition: fill 0.3s ease;
   }
 }
 
 .shadow-svg-right {
   filter: drop-shadow(-2px -4px 0 rgba(0, 0, 0, .25));
+
   path {
-      transition: fill 0.3s ease;
+    transition: fill 0.3s ease;
   }
 }
 
@@ -122,24 +122,30 @@ body {
 }
 
 .thumbnail-container {
-    height: 350px;
-    width: 350px;
-    overflow: hidden;
-    background: white;
-    border-radius: 20px;
-    /* box-shadow: 5px 6px 0 rgba(0, 0, 0, 0.25); */
-    border: 2px solid #BFBFBF;
+  height: 350px;
+  width: 350px;
+  overflow: hidden;
+  background: white;
+  border-radius: 20px;
+  border: 2px solid #BFBFBF;
+  transition: all 0.2s ease;
+}
+
+.thumbnail-container:hover {
+  cursor: pointer;
+  box-shadow: 5px 6px 0 rgba(0, 0, 0, 0.25);
+  transform: translateY(-5px);
 }
 
 .thumbnail-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    
-    &.top {
-      object-position: top;
-    }
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+
+  &.top {
+    object-position: top;
+  }
 }
 
 .navbar.transparent {
@@ -157,8 +163,9 @@ body {
     line-height: 1;
     border-radius: 6px;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.25);
-    transition: all 0.35s ease;
+    transition: all 0.3s ease;
   }
+
   a.navbar-item:hover {
     background-color: #000;
   }
@@ -169,7 +176,7 @@ body {
   border: none;
   border-radius: 20px;
   box-shadow: 5px 6px 0 rgba(0, 0, 0, 0.25);
-  
+
   .card-header {
     border: none;
     background-color: #F9F4F5;
@@ -192,4 +199,21 @@ svg.icon {
   height: 1em;
   fill: currentColor;
   vertical-align: -0.125em;
+}
+
+#portfolioModal .modal-dialog {
+  max-width: min(90vw, 90vh) !important;
+  width: fit-content;
+}
+
+#portfolioModal .modal-body {
+  padding: 0;
+}
+
+#portfolioModal img {
+  max-width: 90vw;
+  max-height: 80vh;
+  width: 100%;
+  height: auto;
+  display: block;
 }

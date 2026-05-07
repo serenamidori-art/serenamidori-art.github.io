@@ -107,18 +107,30 @@ async function renderCommissions() {
         modalPrices.textContent = `Price starts at ${section.price}`;
               
         const modalDesc = document.createElement('p');
-        modalDesc.textContent = `${section.description}`;
+        modalDesc.innerHTML = section.description;
         
         const modalButton = document.createElement('a');
         modalButton.className = 'btn btn-dark';
         modalButton.innerHTML = 'See more examples <i class="ps-1 bi bi-box-arrow-up-right"></i>';
         modalButton.href = `/portfolio#${section.id}`;
         modalButton.target = '_blank';
-        modalButton.rel = 'noopener noreferrer'
+        modalButton.rel = 'noopener noreferrer';
+
+        const a = document.createElement('a');
+        a.className = 'btn btn-dark';
+        a.innerHTML = 'Start Commission <i class="ps-1 bi bi-box-arrow-up-right"></i>';
+        a.href = 'https://forms.gle/axrrwLKjSFR18nB29';
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+
+        const buttonRow = document.createElement('div');
+        buttonRow.className = 'd-flex gap-3';
+        buttonRow.appendChild(modalButton);
+        buttonRow.appendChild(a);
 
         modalBody.appendChild(modalPrices);
         modalBody.appendChild(modalDesc);
-        modalBody.appendChild(modalButton);
+        modalBody.appendChild(buttonRow);
         modalHeader.appendChild(h1);
         modalHeader.appendChild(closeButton);
         modalContent.appendChild(modalHeader);
@@ -142,6 +154,50 @@ async function renderCommissions() {
 async function renderPortfolio() {
   const galleryContainer = document.getElementById('portfolio-gallery');
 
+  // Create a single shared modal
+  const modal = document.createElement('div');
+  modal.className = 'modal fade';
+  modal.id = 'portfolioModal';
+  modal.tabIndex = -1;
+  modal.setAttribute('aria-labelledby', 'portfolioModalLabel');
+  modal.setAttribute('aria-hidden', 'true');
+
+  const modalDialog = document.createElement('div');
+  modalDialog.className = 'modal-dialog modal-dialog-centered';
+
+  const modalContent = document.createElement('div');
+  modalContent.className = 'modal-content';
+
+  const modalHeader = document.createElement('div');
+  modalHeader.className = 'modal-header';
+
+  const modalTitle = document.createElement('h1');
+  modalTitle.className = 'modal-title fs-5';
+  modalTitle.id = 'portfolioModalLabel';
+
+  const closeButton = document.createElement('button');
+  closeButton.type = 'button';
+  closeButton.className = 'btn-close';
+  closeButton.dataset.bsDismiss = 'modal';
+  closeButton.setAttribute('aria-label', 'Close');
+
+  const modalBody = document.createElement('div');
+  modalBody.className = 'modal-body d-flex flex-column align-items-center';
+
+  const modalImg = document.createElement('img');
+  modalImg.className = 'img-fluid';
+
+  modalBody.appendChild(modalImg);
+  modalHeader.appendChild(modalTitle);
+  modalHeader.appendChild(closeButton);
+  modalContent.appendChild(modalHeader);
+  modalContent.appendChild(modalBody);
+  modalDialog.appendChild(modalContent);
+  modal.appendChild(modalDialog);
+  document.body.appendChild(modal);
+
+  const bsModal = new bootstrap.Modal(modal);
+
   try {
       const data = await loadPortfolio();
 
@@ -163,11 +219,17 @@ async function renderPortfolio() {
         section.images.forEach(image => {
           const imgContainer = document.createElement('div');
           imgContainer.className = 'thumbnail-container';
-          
+
+          imgContainer.addEventListener('click', () => {
+            modalImg.src = image.file;
+            modalImg.alt = image.alt;
+            modalTitle.textContent = image.title;
+            bsModal.show();
+          });
+
           const imgElement = document.createElement('img');
           imgElement.src = image.file;
           imgElement.alt = image.alt;
-          imgElement.title = image.title;
           imgElement.className = image.position;
 
           imgContainer.appendChild(imgElement);
