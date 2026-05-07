@@ -1,6 +1,6 @@
 function handleClick(direction) {
-  const list = document.querySelector(".carousel-list");
-  const item = document.querySelector(".item");
+  const list = document.querySelector('.carousel-list');
+  const item = document.querySelector('.item');
   const itemWidth = item.offsetWidth;
   
   if (direction === "previous") {
@@ -10,21 +10,27 @@ function handleClick(direction) {
   }
 }
 
+async function loadPortfolio() {
+    const url = '../data/portfolio.json';
+    const response = await fetch(url);
+    
+    if (response.ok) {
+      return response.json();
+    } else {
+      throw new Error(`HTTP ${response.status}`);
+    }
+}
+
 async function renderCommissions() {
-  const requestURL = '../data/portfolio.json';
   const commissionsList = document.getElementById('commissions-list');
-  const loader = document.getElementById('loader');
+  const modalContainer = document.getElementById('modal-container');
 
   try {
-      const response = await fetch(requestURL);
-
-      if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-      }
-      const data = await response.json();
+      const data = await loadPortfolio();
+      const frag = document.createDocumentFragment();
+      const modalFrag = document.createDocumentFragment();
 
       data.sections.forEach(section => {
-        
         const li = document.createElement('li');
         li.className = 'item';
 
@@ -35,7 +41,7 @@ async function renderCommissions() {
         cardHeader.className = 'card-header';
 
         const h2 = document.createElement('h2');
-        h2.className = 'center-text mb-0 mt-2';
+        h2.className = 'center-text mb-0 mt-3 fw-bold';
         h2.textContent = `${section.label} - ${section.price}`;
 
         const img = document.createElement('img');
@@ -53,44 +59,91 @@ async function renderCommissions() {
         p.className = 'card-text';
         p.textContent = section.description;
         
-        const a = document.createElement('a');
-        // a.href = `/portfolio#${section.id}`;
-        // a.target = '_blank';
-        // a.rel = 'noopener noreferrer'
-        a.className = 'btn btn-dark';
-        a.textContent = 'Learn More';
+        const button = document.createElement('button');
+        button.className = 'btn btn-dark mb-2';
+        button.textContent = 'Learn More';
+        button.dataset.bsToggle = 'modal';
+        button.dataset.bsTarget = `#${section.id}Modal`;
 
         cardHeader.appendChild(h2);
-        // cardBody.appendChild(b);
-        // cardBody.appendChild(p);
         cardBody.appendChild(img);
-        cardBody.appendChild(a);
+        cardBody.appendChild(button);
         card.appendChild(cardHeader);
         card.appendChild(cardBody);
         li.appendChild(card);
         commissionsList.appendChild(li);
+
+        const modal = document.createElement('div');
+        modal.className = 'modal fade';
+        modal.id = `${section.id}Modal`;
+        modal.tabIndex = -1;
+        modal.setAttribute('aria-labelledby', `${section.id}ModalLabel`);
+        modal.setAttribute('aria-hidden', 'true');
+
+        const modalDialog = document.createElement('div');
+        modalDialog.className = 'modal-dialog modal-dialog-centered modal-lg';
+
+        const modalContent = document.createElement('div');
+        modalContent.className = 'modal-content';
+
+        const modalHeader = document.createElement('div');
+        modalHeader.className = 'modal-header';
+
+        const h1 = document.createElement('h1');
+        h1.className = 'modal-title fs-5';
+        h1.id = `${section.id}ModalLabel`;
+        h1.textContent = `${section.label}`;
+
+        const closeButton = document.createElement('button');
+        closeButton.type = 'button';
+        closeButton.className = 'btn-close';
+        closeButton.dataset.bsDismiss = 'modal';
+        closeButton.setAttribute('aria-label', 'Close');
+
+        const modalBody = document.createElement('div');
+        modalBody.className = 'modal-body d-flex flex-column align-items-center';
+  
+        const modalPrices = document.createElement('h4');
+        modalPrices.textContent = `Price starts at ${section.price}`;
+              
+        const modalDesc = document.createElement('p');
+        modalDesc.textContent = `${section.description}`;
+        
+        const modalButton = document.createElement('a');
+        modalButton.className = 'btn btn-dark';
+        modalButton.innerHTML = 'See more examples <i class="ps-1 bi bi-box-arrow-up-right"></i>';
+        modalButton.href = `/portfolio#${section.id}`;
+        modalButton.target = '_blank';
+        modalButton.rel = 'noopener noreferrer'
+
+        modalBody.appendChild(modalPrices);
+        modalBody.appendChild(modalDesc);
+        modalBody.appendChild(modalButton);
+        modalHeader.appendChild(h1);
+        modalHeader.appendChild(closeButton);
+        modalContent.appendChild(modalHeader);
+        modalContent.appendChild(modalBody);
+        modalDialog.appendChild(modalContent);
+        modal.appendChild(modalDialog);
+        modalContainer.appendChild(modal);
       });
 
+      commissionsList.appendChild(frag);
+      modalContainer.appendChild(modalFrag);
   } catch (error) {
       console.error('Error fetching image data:', error);
-      galleryContainer.innerHTML = '<p>Failed to load images.</p>';
+      commissionsList.innerHTML = '<p>Failed to load commissions.</p>';
   }
 
-  loader.remove();
+  const loader = document.getElementById('loader');
+  loader?.remove();
 }
 
 async function renderPortfolio() {
-  const requestURL = '../data/portfolio.json';
   const galleryContainer = document.getElementById('portfolio-gallery');
-  const loader = document.getElementById('loader');
 
   try {
-      const response = await fetch(requestURL);
-
-      if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-      }
-      const data = await response.json();
+      const data = await loadPortfolio();
 
       data.sections.forEach(section => {
         const sectionContainer = document.createElement('div');
@@ -127,16 +180,16 @@ async function renderPortfolio() {
       galleryContainer.innerHTML = '<p>Failed to load images.</p>';
   }
 
-  loader.remove();
+  const loader = document.getElementById('loader');
+  loader?.remove();
+  scrollToSection();
 }
 
-window.addEventListener('load', function() {
+function scrollToSection() {
   if (window.location.hash) {
     const targetElement = document.querySelector(window.location.hash);
     if (targetElement) {
-      setTimeout(() => {
-        targetElement.scrollIntoView({ behavior: 'smooth' });
-      }, 100); 
+      targetElement.scrollIntoView({ behavior: 'smooth' });
     }
   }
-});
+}
