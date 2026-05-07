@@ -126,8 +126,9 @@ body {
     width: 350px;
     overflow: hidden;
     background: white;
-    border-radius: 45px;
-    border: 3px solid #BFBFBF;
+    border-radius: 20px;
+    /* box-shadow: 5px 6px 0 rgba(0, 0, 0, 0.25); */
+    border: 2px solid #BFBFBF;
 }
 
 .thumbnail-container img {
@@ -156,6 +157,7 @@ body {
     line-height: 1;
     border-radius: 6px;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.25);
+    transition: all 0.35s ease;
   }
   a.navbar-item:hover {
     background-color: #000;
@@ -183,4 +185,11 @@ button.chevron {
 
 button.chevron:hover {
   background-color: transparent;
+}
+
+svg.icon {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  vertical-align: -0.125em;
 }
