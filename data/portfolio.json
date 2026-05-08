@@ -1,0 +1,314 @@
+{
+  "sections": [
+    {
+      "id": "fullbody",
+      "label": "Full Body",
+      "price": "$65",
+      "description": "Looking for a fully shaded piece of your character(s)? This option is for you!<br><ul><li>+$45 for each additional character in the piece</li><li>Weapons/props can be included for a variable additional charge, based on complexity.</li><li>Background is transparent by default, but simple or complex backgrounds can be added for an additional charge.</li></ul>",
+      "exampleIndex": 2,
+      "formLink": "https://docs.google.com/forms/d/e/1FAIpQLSdEPLhdOa9wunqkJH7ECZM4iTAjTjnLHlPEjOjFksobCvKnKw/viewform?usp=pp_url&entry.1973489009=Full+Body",
+      "images": [
+        {
+          "file": "assets/full_body/1.png",
+          "alt": "fully shaded digital illustration of a blonde woman in a cowboy hat and outfit holding a revolver",
+          "title": "Two Hats McGee (owned by serenamidori)",
+          "position": "top"
+        },
+        {
+          "file": "assets/full_body/2.png",
+          "alt": "fully shaded digital illustration of a dark haired half-elf woman in an fantasy outfit, a mechanical lizard on her shoulder, and holding a gold staff",
+          "title": "Alenya Van Druskia (owned by Castorrel)",
+          "position": "center"
+        },
+        {
+          "file": "assets/full_body/3.png",
+          "alt": "fully shaded digital illustration of man with rabbit ears and legs in an action pose running towards the viewer",
+          "title": "Lymardra Syvarka (owned by Castorrel)",
+          "position": "center"
+        },
+        {
+          "file": "assets/full_body/4.png",
+          "alt": "fully shaded digital illustration of a pale devil-horned woman in a pin-up pose laying on her back with her legs crossed in the air",
+          "title": "Dulcia (owned by serenamidori)",
+          "position": "center"
+        },
+        {
+          "file": "assets/full_body/5.png",
+          "alt": "fully shaded digital illustration of a reddish-pink skinned woman with devil horns and a tail in an action pose, running and brandishing a dagger",
+          "title": "Virani Huber (owned by Cyberlink420)",
+          "position": "top"
+        },
+        {
+          "file": "assets/full_body/6.png",
+          "alt": "fully shaded digital illustration of a black-haired elven woman in dark mages robes in a spell-casting pose with her hair floating in the air",
+          "title": "Miriel (owned by serenamidori)",
+          "position": "center"
+        },
+        {
+          "file": "assets/full_body/7.png",
+          "alt": "fully shaded digital illustration of a man in a cyberpunk outfit in an action pose, making finger guns while in a crouched position",
+          "title": "Devon (owned by Scribs)",
+          "position": "center"
+        },
+        {
+          "file": "assets/full_body/8.png",
+          "alt": "fully shaded digital illustration of a man wearing heavy fantasy garb, drinking from a horn and sitting on a large tree stump",
+          "title": "Orwell Magrine (owned by GaspLantern)",
+          "position": "center"
+        },
+        {
+          "file": "assets/full_body/9.png",
+          "alt": "fully shaded digital illustration of a pale devil-horned woman in a pin-up pose sitting on her knees and leaning forward to the viewer",
+          "title": "Dulcia (owned by serenamidori)",
+          "position": "center"
+        },
+        {
+          "file": "assets/full_body/10.png",
+          "alt": "fully shaded digital illustration of of a half-elf wizard man in a spell-casting pose next to a small pixie woman, casting spells alongside him",
+          "title": "Prin & Mueldon (owned by serenamidori)",
+          "position": "center"
+        },
+        {
+          "file": "assets/full_body/11.png",
+          "alt": "fully shaded digital illustration of a half-elf wizard man and a pixie woman hugging near small sewing items to indicate they are both tiny",
+          "title": "Prin & Mueldon (owned by serenamidori)",
+          "position": "center"
+        },
+        {
+          "file": "assets/full_body/12.png",
+          "alt": "fully shaded digital illustration of a young man in simple fantasy garb with a small pixie woman on his shoulder",
+          "title": "Prin & Sam (owned by serenamidori)",
+          "position": "top"
+        },
+        {
+          "file": "assets/full_body/13.png",
+          "alt": "fully shaded digital illustration of a pale devil-horned woman in a pin-up pose laying on her front with her tail and legs curled up behind her",
+          "title": "Dulcia (owned by serenamidori)",
+          "position": "center"
+        },
+        {
+          "file": "assets/full_body/14.png",
+          "alt": "fully shaded digital illustration of two elven people in modern clothing embracing while one sits in the other's lap",
+          "title": "Jess & Zoe (owned by HailStone2318/quagsthecryptid)",
+          "position": "top"
+        },
+        {
+          "file": "assets/full_body/15.png",
+          "alt": "fully shaded digital illustration of an elven woman and a halfling man in fantasy garb, while the man lays his head on the woman's lap",
+          "title": "Robin & Lilylynn (owned by ddemise)",
+          "position": "center"
+        },
+        {
+          "file": "assets/full_body/16.png",
+          "alt": "fully shaded digital illustration of fairy in a fantasy outfit and dragonfly wings flying around and looking behind them",
+          "title": "Hollow (owned by thezachrifice)",
+          "position": "center"
+        }
+      ]
+    },
+    {
+      "id": "reference",
+      "label": "Character Reference",
+      "price": "$50",
+      "description": "If your character needs a new reference sheet or needs to be drawn for the first time, this is the option for you.<br><ul><li>Can be done from text descriptions or random images.</li><li>Options for alternate forms, extra outfits, or other props are available for a variable extra charge.</li><li>For free, you can add a color palette, a SFW base version, or a height chart.</li></ul>",
+      "exampleIndex": 0,
+      "formLink": "https://docs.google.com/forms/d/e/1FAIpQLSdEPLhdOa9wunqkJH7ECZM4iTAjTjnLHlPEjOjFksobCvKnKw/viewform?usp=pp_url&entry.1973489009=Character+Reference",
+      "images": [
+        {
+          "file": "assets/reference/1.png",
+          "alt": "flat colored digital illustration of a dark skinned half-elf woman in two different variations of one outfit",
+          "title": "Nia Tes'rretyn (owned by serenamidori)",
+          "position": "top"
+        },
+        {
+          "file": "assets/reference/2.png",
+          "alt": "flat colored digital illustration of a pale devil-horned woman in three different outfits",
+          "title": "Dulcia (owned by serenamidori)",
+          "position": "center"
+        },
+        {
+          "file": "assets/reference/3.png",
+          "alt": "flat colored digital illustration of a black haired elf woman in a relaxed spell-caster outfit",
+          "title": "Miriel (owned by serenamidori)",
+          "position": "top"
+        },
+        {
+          "file": "assets/reference/4.png",
+          "alt": "flat colored digital illustration of a dark-skinned half-elf man with dragon scales and tattoos wearing and adventurer outfit",
+          "title": "Orion (owned by serenamidori)",
+          "position": "top"
+        },
+        {
+          "file": "assets/reference/5.png",
+          "alt": "flat colored digital illustration of a dark-skinned elf woman with long fluffy black hair and a blue and gold dress, posed holding the dress and looking away pensively",
+          "title": "Haelum (owned by serenamidori)",
+          "position": "top"
+        },
+        {
+          "file": "assets/reference/6.png",
+          "alt": "flat colored digital illustration of a blonde haired human woman in complex fantasy armor wielding two swords and a dagger floating beside her",
+          "title": "Romana Blum (owned by serenamidori)",
+          "position": "top"
+        },
+        {
+          "file": "assets/reference/7.png",
+          "alt": "flat colored digital illustration of two alligator lizardfolk men with different outfits and weapons while being in mirroring poses",
+          "title": "Bertalis and Barret Thibodeaux (owned by serenamidori)",
+          "position": "center"
+        },
+        {
+          "file": "assets/reference/8.png",
+          "alt": "flat colored digital illustration of an elf woman with long brown hair in two different forms, one of which has a large snake body instead",
+          "title": "Selina Hessatal (owned by serenamidori)",
+          "position": "center"
+        },
+        {
+          "file": "assets/reference/9.png",
+          "alt": "flat colored digital illustration of a young pale skinned girl with pink hair, devil horns, and a tail hugging a stuffed cat",
+          "title": "Dulcia (owned by serenamidori)",
+          "position": "center"
+        },
+        {
+          "file": "assets/reference/10.png",
+          "alt": "flat colored digital illustration of a dark-skinned elf woman with long fluffy black hair and a pink rose dress, sitting on her side",
+          "title": "Haelum (owned by serenamidori)",
+          "position": "center"
+        },
+        {
+          "file": "assets/reference/11.png",
+          "alt": "flat colored digital illustration of a young pink skinned woman with devil horns and a tail in modern clothes brandishing a pickaxe",
+          "title": "Aria (owned by serenamidori)",
+          "position": "top"
+        },
+        {
+          "file": "assets/reference/12.png",
+          "alt": "flat colored digital illustration of a human man in fantasy armor in three different variations; fully clothed, partially clothed, and nude (no genitals are shown)",
+          "title": "Eli Ardelean (owned by serenamidori)",
+          "position": "center"
+        },
+        {
+          "file": "assets/reference/13.png",
+          "alt": "flat colored digital illustration of a dark grey skinned man with devil horns and a tail in a colorful fantasy outfit, posed brandishing tarot cards",
+          "title": "Koji Himura (owned by serenamidori)",
+          "position": "top"
+        }
+      ]
+    },
+    {
+      "id": "partytoken",
+      "label": "D&D Party Token",
+      "price": "$80",
+      "description": "A token of your whole adventuring party for your online TTRPG games. Best used for tracking your party's progress on overworld maps, or just shoving your characters into a tiny circle!<br><ul><li>An additional charge may be added for larger parties or added complexity.</li><li>VTT-ready token with border can be added for free upon request.</li></ul>.",
+      "exampleIndex": 1,
+      "formLink": "https://docs.google.com/forms/d/e/1FAIpQLSdEPLhdOa9wunqkJH7ECZM4iTAjTjnLHlPEjOjFksobCvKnKw/viewform?usp=pp_url&entry.1973489009=D%26D+Party+Token",
+      "images": [
+        {
+          "file": "assets/party_token/1.png",
+          "alt": "fully shaded digital illustration of a 5 person D&D party, everyone's faces close together with various expressions looking at the viewer.",
+          "title": "5 Character Party Token",
+          "position": "center"
+        },
+        {
+          "file": "assets/party_token/2.png",
+          "alt": "fully shaded digital illustration of a 9 person Pathfinder party, including a bearfolk, dragon, pixie, several elves and humans, all smiling at the viewer.",
+          "title": "9 Character Party Token",
+          "position": "center"
+        },
+        {
+          "file": "assets/party_token/3.png",
+          "alt": "fully shaded digital illustration of a 5 person D&D party, showing off their heights and different personalities and looking different directions.",
+          "title": "5 Character Party Token",
+          "position": "center"
+        },
+        {
+          "file": "assets/party_token/4.png",
+          "alt": "fully shaded digital illustration of 5 person D&D party, with all members looking at the viewer with confident looks on their faces.",
+          "title": "5 Character Party Token",
+          "position": "center"
+        },
+        {
+          "file": "assets/party_token/5.png",
+          "alt": "fully shaded digital illustration of 4 person adventuring party with various expressions and personalities, all looking in different directions.",
+          "title": "4 Character Party Token",
+          "position": "center"
+        },
+        {
+          "file": "assets/party_token/6.png",
+          "alt": "fully shaded digital illustration of a 4 person D&D party with everyone looking at the viewer with various degrees of confidence.",
+          "title": "4 Character Party Token",
+          "position": "center"
+        }
+      ]
+    },
+    {
+      "id": "sketch",
+      "label": "Sketch",
+      "price": "$20",
+      "description": "My clean and detailed sketches are a quicker and cheaper option if you're looking for character art.<br><ul><li>Sketches are not colored, but are allowed to be colored as long as credit is given.</li><li>Light shading can be added for free upon request.</li></ul>",
+      "exampleIndex": 0,
+      "formLink": "https://docs.google.com/forms/d/e/1FAIpQLSdEPLhdOa9wunqkJH7ECZM4iTAjTjnLHlPEjOjFksobCvKnKw/viewform?usp=pp_url&entry.1973489009=Sketch",
+      "images": [
+        {
+          "file": "assets/sketch/1.png",
+          "alt": "digital half-body sketch of a woman in clown/jester outfit and makeup smiling and looking away from the viewer.",
+          "title": "Blithe (owned by serenamidori)",
+          "position": "center"
+        },
+        {
+          "file": "assets/sketch/2.png",
+          "alt": "digital half-body sketch of a half-elf woman pouring liquid from one vial into another, with text reading 'No need to step back! It's gonna be fine!'",
+          "title": "Alenya Van Druskia (owned by Castorrel)",
+          "position": "center"
+        },
+        {
+          "file": "assets/sketch/3.png",
+          "alt": "digital half-body sketch of human man looking pensively off to the side.",
+          "title": "Eli Ardelean (owned by serenamidori)",
+          "position": "center"
+        },
+        {
+          "file": "assets/sketch/4.png",
+          "alt": "digital half-body sketch of a woman in skull mask and head wrap, looking intensely at the viewer.",
+          "title": "Duskull Gijinka (owned by serenamidori)",
+          "position": "center"
+        },
+        {
+          "file": "assets/sketch/5.png",
+          "alt": "digital half-body sketch of of an anthropomorphized cat wizard looking over",
+          "title": "Unnamed Wizard Cat (owned by serenamidori)",
+          "position": "center"
+        },
+        {
+          "file": "assets/sketch/6.png",
+          "alt": "digital sketch of a tiefling man and a halfling man on his shoulders both looking intimidatingly at the viewer.",
+          "title": "Danry & Mallum (owned by serenamidori and a friend)",
+          "position": "center"
+        },
+        {
+          "file": "assets/sketch/7.png",
+          "alt": "digital sketch of a muscular man with horns and a winged kobold behind him smiling at each other.",
+          "title": "Elmar & Mola (owned by redasatomato and serenamidori)",
+          "position": "center"
+        },
+        {
+          "file": "assets/sketch/8.png",
+          "alt": "digital sketch of ",
+          "title": "Alenya Van Druskia & Orion (owned by Castorrel and serenamidori)",
+          "position": "center"
+        },
+        {
+          "file": "assets/sketch/9.png",
+          "alt": "digital half-body sketch of a woman with long hair looking at the viewer cutely with a finger on her chin.",
+          "title": "Unnamed Girl (owned by serenamidori)",
+          "position": "center"
+        },
+        {
+          "file": "assets/sketch/10.png",
+          "alt": "digital sketch of a patch-work doll woman sitting and smiling off to the side.",
+          "title": "Patches (owned by serenamidori)",
+          "position": "center"
+        }
+      ]
+    }
+  ]
+}
