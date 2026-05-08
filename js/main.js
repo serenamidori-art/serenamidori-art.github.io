@@ -119,7 +119,7 @@ async function renderCommissions() {
         const a = document.createElement('a');
         a.className = 'btn btn-dark';
         a.innerHTML = 'Start Commission <i class="ps-1 bi bi-box-arrow-up-right"></i>';
-        a.href = 'https://forms.gle/axrrwLKjSFR18nB29';
+        a.href = section.formLink;
         a.target = '_blank';
         a.rel = 'noopener noreferrer';
 
