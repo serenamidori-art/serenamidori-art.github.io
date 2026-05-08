@@ -79,7 +79,7 @@ body {
 
       .card {
         height: -webkit-fill-available;
-        width: 25vw;
+        width: 100%;
       }
     }
   }
@@ -122,8 +122,8 @@ body {
 }
 
 .thumbnail-container {
-  height: 350px;
-  width: 350px;
+  width: 100%;
+  aspect-ratio: 1;
   overflow: hidden;
   background: white;
   border-radius: 20px;
@@ -151,19 +151,28 @@ body {
 .navbar.transparent {
   background-color: transparent;
   background-image: none;
-  gap: .75em;
+  gap: .5em;
+
+  @media (min-width: 576px) {
+    gap: .75em;
+  }
 
   a.navbar-item {
     color: #fff;
     font-weight: 500;
-    font-size: 1.25em;
+    font-size: 1em;
     letter-spacing: 1px;
 
-    padding: 1rem 1.25rem;
+    padding: .75rem 1rem;
     line-height: 1;
     border-radius: 6px;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.25);
     transition: all 0.3s ease;
+
+    @media (min-width: 576px) {
+      font-size: 1.25em;
+      padding: 1rem 1.25rem;
+    }
   }
 
   a.navbar-item:hover {
@@ -181,6 +190,10 @@ body {
     border: none;
     background-color: #F9F4F5;
     border-radius: 20px;
+  }
+
+  .card-body {
+    flex-grow: 1;
   }
 }
 

@@ -32,7 +32,7 @@ async function renderCommissions() {
 
       data.sections.forEach(section => {
         const li = document.createElement('li');
-        li.className = 'item';
+        li.className = 'item col-10 col-md-6 col-lg-4 col-xxl-3';
 
         const card = document.createElement('div');
         card.className = 'card';
@@ -50,7 +50,7 @@ async function renderCommissions() {
         img.alt = '...';
 
         const cardBody = document.createElement('div');
-        cardBody.className = 'card-body d-flex flex-column align-items-center justify-content-between';
+        cardBody.className = 'card-body d-flex flex-column align-items-center';
 
         const b = document.createElement('b');
         b.textContent = '(+$45 for each additional character)';
@@ -58,7 +58,11 @@ async function renderCommissions() {
         const p = document.createElement('p');
         p.className = 'card-text';
         p.textContent = section.description;
-        
+
+        const imgWrapper = document.createElement('div');
+        imgWrapper.className = 'd-flex flex-grow-1 align-items-center justify-content-center w-100';
+        imgWrapper.appendChild(img);
+
         const button = document.createElement('button');
         button.className = 'btn btn-dark mb-2';
         button.textContent = 'Learn More';
@@ -66,7 +70,7 @@ async function renderCommissions() {
         button.dataset.bsTarget = `#${section.id}Modal`;
 
         cardHeader.appendChild(h2);
-        cardBody.appendChild(img);
+        cardBody.appendChild(imgWrapper);
         cardBody.appendChild(button);
         card.appendChild(cardHeader);
         card.appendChild(cardBody);
@@ -210,13 +214,16 @@ async function renderPortfolio() {
         header.textContent = `${section.label}`;
 
         const imageSection = document.createElement('div');
-        imageSection.className = 'd-flex flex-row flex-wrap justify-content-around gap-4';
+        imageSection.className = 'row g-3';
 
         galleryContainer.appendChild(sectionContainer);
         sectionContainer.appendChild(header);
         sectionContainer.appendChild(imageSection);
 
         section.images.forEach(image => {
+          const colDiv = document.createElement('div');
+          colDiv.className = 'col-6 col-md-4 col-lg-3 col-xxl-2';
+
           const imgContainer = document.createElement('div');
           imgContainer.className = 'thumbnail-container';
 
@@ -233,7 +240,8 @@ async function renderPortfolio() {
           imgElement.className = image.position;
 
           imgContainer.appendChild(imgElement);
-          imageSection.appendChild(imgContainer);
+          colDiv.appendChild(imgContainer);
+          imageSection.appendChild(colDiv);
         });
       });
 
